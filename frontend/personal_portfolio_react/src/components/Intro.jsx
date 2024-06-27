@@ -7,8 +7,8 @@ const Intro = () => (
           <h1 className="flex flex-col flex-1 font-Montserrat sm:text-[55px] text-[50px] text-white tracking-tighter">
             <div className="sm:block hidden text-[48px]">Hi,</div>
             <div className="sm:hidden block text-[42px]">Hi,</div>
-            <div className="sm:block hidden text-[48px]">I'm <span className="text-gradient text-[55px] backdrop-blur">SYED AYMAN QUADRI,</span></div> 
-            <div className="sm:hidden block text-[42px]">I'm <span className="text-gradient text-[50px]">AYMAN,</span></div> 
+            <div className="sm:block hidden text-[48px]">I'm <span className="text-gradient1 text-[55px] backdrop-blur">SYED AYMAN QUADRI,</span></div> 
+            <div className="sm:hidden block text-[42px]">I'm <span className="text-gradient1 text-[50px]">AYMAN,</span></div> 
             <div className="sm:block hidden text-[48px]">software engineer.</div>
             <div className="sm:hidden block text-[42px]">software engineer.</div>
           </h1>

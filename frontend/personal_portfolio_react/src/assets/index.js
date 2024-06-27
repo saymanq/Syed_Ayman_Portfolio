@@ -3,6 +3,26 @@ import home_bg_img from './home_bg_img.jpg';
 import menu from './menu.svg';
 import close from './close.svg';
 import pfp from './pfp.png';
+import python from './python.svg'
+import javascript from './javascript.svg';
+import cpp from './cpp.svg';
+import mysql from './mysql.svg';
+import html from './html.svg';
+import css from './css.svg';
+import vite from './vite.svg';
+import flask from './flask.svg';
+import django from './django.svg';
+import tailwind from './tailwind.svg';
+import bootstrap from './bootstrap.svg';
+import github from './github.svg';
+import vscode from './vscode.svg';
+import aws from './aws.svg';
+import redux from './redux.svg';
+import pandas from './pandas.svg';
+import numpy from './numpy.svg';
+import matplotlib from './matplotlib.svg';
+import scikitlearn from './scikit-learn.svg';
+import tensorflow from './tensorflow.svg';
 
 export {
     logo,
@@ -10,4 +30,24 @@ export {
     menu,
     close,
     pfp,
+    python,
+    javascript,
+    cpp,
+    mysql,
+    html,
+    css,
+    vite,
+    flask,
+    django,
+    tailwind,
+    bootstrap,
+    github,
+    vscode,
+    aws,
+    redux,
+    pandas,
+    numpy,
+    matplotlib,
+    scikitlearn,
+    tensorflow,
 };

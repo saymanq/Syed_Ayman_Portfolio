@@ -1,8 +1,11 @@
 import { pfp } from '../assets';
 
 const Intro = () => (
-    <section id="home" className={`flex md:flex-row flex-col sm:py-16 py-6`}>
-      <div className="flex flex-row justify-between items-center w-full pt-10 pl-7">
+    <section id="home" className={`flex sm:flex-row flex-col sm:py-16 py-6`}>
+      <div className="flex sm:flex-row flex-col justify-between items-center w-full sm:pt-10 pt-3 sm:pl-7">
+        <div className="sm:hidden flex w-[250px] mb-7">
+          <img src={pfp} alt="ProfilePic"  className="w-[400px] rounded-full border-2" style={{ borderColor: '#A190FF'}}/>
+        </div>
         <div className="flex-col">
           <h1 className="flex flex-col flex-1 font-Montserrat sm:text-[55px] text-[50px] text-white tracking-tighter">
             <div className="sm:block hidden text-[48px]">Hi,</div>

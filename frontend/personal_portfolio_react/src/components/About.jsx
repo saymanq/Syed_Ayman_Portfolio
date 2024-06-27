@@ -147,8 +147,8 @@ const About = () => (
                         {/* Scikit-Learn */}
                         <img src={scikitlearn} className="sm:w-7 w-5"/>
                         <h1 className="text-white font-Montserrat ml-2 sm:text-[18px] text-[15px]">Scikit-Learn</h1>
-sm:
-   w-5                      {/* Divider */}
+
+                         {/* Divider */}
                         <div className="text-white mx-5 border-white bg-white">'</div>
                         
                         {/* TensorFlow */}

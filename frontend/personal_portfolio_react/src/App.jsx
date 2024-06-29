@@ -1,4 +1,4 @@
-import { NavBar, Intro, About } from './components';
+import { NavBar, Intro, About, Portfolio } from './components';
 
 
 const App = () => (
@@ -28,7 +28,14 @@ const App = () => (
           <div className="w-full">
             <About />
           </div>
-        </div>
+      </div>
+
+      {/* Projects */}
+      <div className="flex justify-center items-center sm:px-16 px-6">
+          <div className="w-full">
+            <Portfolio />
+          </div>
+      </div>
       
     </div>
   )

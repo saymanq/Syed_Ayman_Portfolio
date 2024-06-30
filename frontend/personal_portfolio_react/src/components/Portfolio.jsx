@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { home_bg_img } from "../assets";
 
-const baseUrl = 'http://127.0.0.1:5000'
+const baseUrl = 'https://syed-ayman-portfolio-flask-app.onrender.com'
 
 const Portfolio = () => {
     const [dataList, setDataList] = useState([]);
     
     
     const fetchdata = async () => {
-        const data = await axios.get(`${baseUrl}/api/getproject`);
+        const data = await axios.get(`${baseUrl}/api/getprojects`);
         const cleanData = data.data;
         console.log(cleanData);
         setDataList(cleanData);

@@ -1,44 +1,22 @@
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, jsonify
+import boto3
+import os
 from flask_cors import CORS
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:sqwerty@localhost/portfolio"
-db = SQLAlchemy(app)
 CORS(app)
-
-class Event(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    description = db.Column(db.String(100), nullable=False)
-    img_url = db.Column(db.String(100), nullable=False)
-    link_url = db.Column(db.String(100), nullable=False)
-
-    def __repr__(self):
-        return f"Event: {self.name}"
-    
-    def __init__(self, name, description, img_url, link_url):
-        self.name = name
-        self.description = description
-        self.img_url = img_url
-        self.link_url = link_url
-
-def format_data(event):
-    return {
-        "id": event.id,
-        "name": event.name,
-        "description": event.description,
-        "img_url": event.img_url,
-        "link_url": event.link_url,
-    }
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+dynamodb = boto3.resource('dynamodb', aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_SECRET_ACCESS_KEY, region_name='ca-central-1')
 
 @app.route('/api/getprojects', methods = ['GET'])
 def get_projects():
-    events = Event.query.order_by(Event.id.asc()).all()
-    event_list = []
-    for event in events:
-        event_list.append(format_data(event))
-    return {"events": event_list}
+    table = dynamodb.Table('portfolio_projects')
+    response = table.scan()
+    items = response['Items']
+    return jsonify(items)
 
 @app.route('/')
 def hello():

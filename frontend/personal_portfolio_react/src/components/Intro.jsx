@@ -22,8 +22,8 @@ const Intro = () => (
             </div>
             </a>
             <a href="#contact">
-            <div className="flex sm:mr-5 ml-7 text-center">
-                <span className="border-box border-2 sm:p-[25px] p-[10px] text-white font-[300] tracking-[3px] text-[13px] relative info-button" style={{ borderColor: '#A190FF'}}>GET IN TOUCH WITH ME</span>
+            <div className="flex sm:mr-3 ml-7 text-center">
+                <span className="border-box border-2 sm:p-[25px] p-[10px] text-white font-[300] tracking-[3px] text-[13px] relative info-button" style={{ borderColor: '#A190FF'}}>VIEW RESUME</span>
             </div>
             </a>
           </div>

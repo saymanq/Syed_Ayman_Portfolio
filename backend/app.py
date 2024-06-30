@@ -1,9 +1,11 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:sqwerty@localhost/portfolio"
 db = SQLAlchemy(app)
+CORS(app)
 
 class Event(db.Model):
     id = db.Column(db.Integer, primary_key=True)

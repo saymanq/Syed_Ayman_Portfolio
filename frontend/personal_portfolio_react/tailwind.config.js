@@ -15,6 +15,7 @@ export default {
         two: "#078EFB",
         three: "#A190FF",
         four: "#BD99FE",
+        five: "#BE6EAE"
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],

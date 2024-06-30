@@ -10,7 +10,7 @@ const NavBar = () => {
       <img src={logo} alt="SAQ" className="sm:w-[160px] w-[120px]"/>
       <ul className="list-none sm:flex hidden justify-start items-center flex-1 ml-20">
         {navLinks.map((nav, index) => (
-          <li key={nav.id} className={`font-Montserrat font-normal cursor-pointer text-[14px] tracking-[3px] text-white ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}>
+          <li key={nav.id} className={`font-Montserrat font-normal cursor-pointer text-[14px] hover:text-bold tracking-[3px] text-white hover:text-three transition duration-0 hover:duration-300 ease-in-out ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}>
             <a href={`#${nav.id}`}>
               {nav.title}
             </a>
@@ -22,13 +22,13 @@ const NavBar = () => {
         <img src={toggle ? close : menu} alt="menu" className="w-[25px] h-[25px] object-contain cursor-pointer" onClick={() => setToggle((prev) => !prev)} />
         <div className={`${toggle ? 'flex' : 'hidden'} px-20 py-[50px] backdrop-blur-xl text-white absolute top-20 mr-10 mt-8 min-w-[140px] rounded-xl sidebar border`}>
           <ul className="list-none flex justify-start items-center flex-1 flex-col">
-          {navLinks.map((nav, index) => (
-            <li key={nav.id} className={`font-Montserrat font-normal cursor-pointer text-[14px] tracking-[3px] text-white ${index === navLinks.length - 1 ? "mr-0" : "mb-10"}`}>
-              <a href={`#${nav.id}`}>
-                {nav.title}
-              </a>
-            </li>
-          ))}
+            {navLinks.map((nav, index) => (
+              <li key={nav.id} className={`font-Montserrat font-normal cursor-pointer text-[14px] hover:text-bold tracking-[3px] text-white hover:text-three transition duration-0 hover:duration-300 ease-in-out ${index === navLinks.length - 1 ? "mr-0" : "mb-10"}`}>
+                <a href={`#${nav.id}`}>
+                  {nav.title}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

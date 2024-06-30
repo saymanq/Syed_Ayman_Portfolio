@@ -14,7 +14,11 @@
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@keyframes slide-top {
+.animate-slideup {
+  animation: slideup 1s ease-out;
+}
+
+@keyframes slideup {
   0% {
     -webkit-transform: translateY(100px);
     transform: translateY(100px);

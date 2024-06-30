@@ -1,164 +1,50 @@
-import { python, javascript, cpp, mysql, html, css, vite, flask, django, tailwind, bootstrap, github, vscode, aws, redux, pandas, numpy, matplotlib, scikitlearn, tensorflow } from "../assets";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { home_bg_img } from "../assets";
 
-const Portfolio = () => (
+const baseUrl = 'http://127.0.0.1:5000'
+
+const Portfolio = () => {
+    const [dataList, setDataList] = useState([]);
+    
+    
+    const fetchdata = async () => {
+        const data = await axios.get(`${baseUrl}/api/getprojects`);
+        const { events } = data.data;
+        setDataList(events);
+    }
+
+    useEffect(() => {
+        fetchdata();
+    }, [])
+
+    
+    return (
     <section id="portfolio" className="flex justify-center items-center flex-col py-9">
-        <div className="">
-            <p className="text-subtitle font-opensans tracking-[0.04166666667em]">WORK</p>
+        <div className="mt-10">
+            <h1 className="text-white font-Montserrat sm:text-[50px] text-[30px] font-semibold">PORTFOLIO PROJECTS</h1>
         </div>
-        
-            <div className="flex w-full border-box border-2 border-three rounded-[15px] p-1 mt-5">
-                <div className="mx-5 mt-5 mb-7 text-left overflow-auto">
-                    <h1 className="text-three font-Montserrat sm:text-[29px] text-[24px]">WHO AM I?</h1>
-                    <p className="text-white font-Montserrat sm:text-[17px] text-[13px] mt-4 mb-5">
-                        I'm a very ambitious <span className="text-three sm:text-[19px] text-[15px]">Machine Learning Engineer</span> driven by a curiosity to explore 
-                        the intersection of technology and creativity. With an extraordinarily strong 
-                        foundation in programming fundamentals, I am always seeking opportunities to learn 
-                        and grow in the field. Through my projects and experiences, I aim to showcase my  
-                        skills and dedication to innovative problem-solving.
-                    </p>
-                    <h1 className="text-three font-Montserrat sm:text-[29px] text-[24px]">LANGUAGES</h1>
-                    <div className="mt-4 flex justify-start items-center flex-wrap mx-1 tracking-wider ">
-                        {/* Python */}
-                        <img src={python} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">Python</h1>
-
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-
-                        {/* Javascript */}
-                        <img src={javascript} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">JavaScript</h1>
-                        
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* CPP */}
-                        <img src={cpp} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">C/C++</h1>
-
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* MySQL */}
-                        <img src={mysql} className="sm:w-6 w-4 invert"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">MySQL</h1>
-
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* HTML */}
-                        <img src={html} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">HTML5</h1>
-
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* CSS */}
-                        <img src={css} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">CSS3</h1>
-                    </div>
-
-                    <h1 className="text-three font-Montserrat sm:text-[29px] text-[24px] mt-5">FRAMEWORKS</h1>
-                    <div className="mt-4 flex justify-start items-center flex-wrap mx-1 tracking-wider">
-                        {/* Vite + React */}
-                        <img src={vite} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">Vite + React</h1>
-
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-
-                        {/* Flask */}
-                        <img src={flask} className="sm:w-6 w-4 invert"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">Flask</h1>
-                        
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* Django */}
-                        <img src={django} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">Django</h1>
-
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* Tailwind */}
-                        <img src={tailwind} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">TailwindCSS</h1>
-
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* Bootstrap */}
-                        <img src={bootstrap} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">Bootstrap</h1>
-                    </div>
-
-                    <h1 className="text-three font-Montserrat sm:text-[29px] text-[24px] mt-5">DEVELOPER TOOLS</h1>
-                    <div className="mt-4 flex justify-start items-center flex-wrap mx-1 tracking-wider">
-                        {/* Github */}
-                        <img src={github} className="sm:w-6 w-4 invert"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">Github</h1>
-
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-
-                        {/* VSCode */}
-                        <img src={vscode} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">Visual Studio Code</h1>
-                        
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* Amazon Web Services */}
-                        <img src={aws} className="sm:w-6 w-4 invert"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">Amazon Web Services</h1>
-
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* Redux */}
-                        <img src={redux} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">React-Redux</h1>
-                    </div>
-
-                    <h1 className="text-three font-Montserrat sm:text-[29px] text-[24px] mt-5">LIBRARIES</h1>
-                    <div className="mt-4 flex justify-start items-center flex-wrap mx-1 tracking-wider">
-                        {/* NumPy */}
-                        <img src={numpy} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">NumPy</h1>
-
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-
-                        {/* Pandas */}
-                        <img src={pandas} className="sm:w-6 w-4 invert"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">Pandas</h1>
-                        
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* Matplotlib */}
-                        <img src={matplotlib} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">Matplotlib</h1>
-
-                        {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* Scikit-Learn */}
-                        <img src={scikitlearn} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">Scikit-Learn</h1>
-
-                         {/* Divider */}
-                        <div className="text-white mx-5 border-white bg-white">'</div>
-                        
-                        {/* TensorFlow */}
-                        <img src={tensorflow} className="sm:w-6 w-4"/>
-                        <h1 className="text-white font-Montserrat ml-2 sm:text-[15px] text-[12px]">TensorFlow</h1>
-                    </div>
-                </div>
+        <div className="flex w-full p-1 mt-5">
+            <div className="mx-5 mt-5 mb-7 text-left overflow-auto w-full flex justify-evenly items-center flex-wrap cards-wrapper">
+                {dataList.map(data => {
+                    return (
+                        <a key={data.id} href={data.link_url} target="_blank">
+                            <div className={`border-box border-2 border-two rounded-lg w-[300px] h-[350px] overflow-auto hover:shadow-two shadow-xl transition duration-0 hover:duration-300 ease-in-out ${((data.id) > (window.innerWidth >= 640 ? 3 : 1)) ? 'mt-14 mb-6' : ''} `}>
+                                <img src={home_bg_img} className="rounded-lg w-full h-[160px] "/>
+                                <div className="text-two mt-2 mx-2 text-[20px] text-center font-Montserrat tracking-tighter underline underline-offset-[6px]">{data.name}</div>
+                                <div className="text-white mt-2 mx-2 text-[17px] text-center font-Montserrat tracking-tighter">{data.description}</div>
+                            </div>
+                        </a>
+                    )
+                })}
             </div>
+        </div>
+        <div className="">
+            <p className="text-subtitle font-opensans tracking-[0.04166666667em]">FILTERING PROJECTS BY CATEGORIES UNDER DEVELOPMENT</p>
+        </div>
         
     </section>
   )
+}
 
 export default Portfolio

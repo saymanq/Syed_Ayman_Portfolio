@@ -23,6 +23,10 @@ import numpy from './numpy.svg';
 import matplotlib from './matplotlib.svg';
 import scikitlearn from './scikit-learn.svg';
 import tensorflow from './tensorflow.svg';
+import project1 from './project-imgs/project1.jpg';
+import project2 from './project-imgs/project2.png';
+import project3 from './project-imgs/project3.png';
+import project4 from './project-imgs/project4.png';
 
 export {
     logo,
@@ -50,4 +54,8 @@ export {
     matplotlib,
     scikitlearn,
     tensorflow,
+    project1,
+    project2,
+    project3,
+    project4,
 };

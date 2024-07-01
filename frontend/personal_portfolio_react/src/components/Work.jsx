@@ -1,9 +1,6 @@
-import { python, javascript, cpp, mysql, html, css, vite, flask, django, tailwind, bootstrap, github, vscode, aws, redux, pandas, numpy, matplotlib, scikitlearn, tensorflow } from "../assets";
+
 
 const Work = () => {
-    const listItems = ['Hello', 'Hi']
-    
-    
     return (
     <section id="work" className="flex justify-center items-center flex-col py-9">
         <div className="mt-10">

@@ -14,13 +14,14 @@ dynamodb = boto3.resource('dynamodb', aws_access_key_id=AWS_ACCESS_KEY_ID, aws_s
 @app.route('/api/getprojects', methods = ['GET'])
 def get_projects():
     table = dynamodb.Table('portfolio_projects')
-    response = table.scan(ScanIndexForward=True)
+    response = table.scan()
     items = response['Items']
-    return jsonify(items)
+    sorted_data = sorted(items, key=lambda x: int(x["project_id"]))
+    return jsonify(sorted_data)
 
 @app.route('/')
 def hello():
-    return "Hey!!"
+    return "Hey!! Server's Runnin!! "
 
 
 if __name__ == '__main__':

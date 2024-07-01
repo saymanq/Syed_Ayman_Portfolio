@@ -14,7 +14,7 @@ dynamodb = boto3.resource('dynamodb', aws_access_key_id=AWS_ACCESS_KEY_ID, aws_s
 @app.route('/api/getprojects', methods = ['GET'])
 def get_projects():
     table = dynamodb.Table('portfolio_projects')
-    response = table.scan()
+    response = table.scan(ScanIndexForward=True)
     items = response['Items']
     return jsonify(items)
 

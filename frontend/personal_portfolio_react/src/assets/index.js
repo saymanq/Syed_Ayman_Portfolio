@@ -27,6 +27,8 @@ import project1 from './project-imgs/project1.jpg';
 import project2 from './project-imgs/project2.png';
 import project3 from './project-imgs/project3.png';
 import project4 from './project-imgs/project4.png';
+import linkedin from './linkedin.svg';
+import gmail from './gmail.svg';
 
 export {
     logo,
@@ -58,4 +60,6 @@ export {
     project2,
     project3,
     project4,
+    linkedin,
+    gmail,
 };

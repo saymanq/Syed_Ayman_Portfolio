@@ -3,7 +3,7 @@ import { pfp } from '../assets';
 const Intro = () => (
     <section id="home" className={`flex sm:flex-row flex-col sm:py-16 py-6`}>
       <div className="flex sm:flex-row flex-col justify-between items-center w-full sm:pt-10 pt-3 sm:pl-7">
-        <div className="sm:hidden flex w-[250px] mb-7">
+        <div className="sm:hidden flex w-[250px] mb-4 mt-9">
           <img src={pfp} alt="ProfilePic"  className="w-[400px] rounded-full border-2" style={{ borderColor: '#A190FF'}}/>
         </div>
         <div className="flex-col">
@@ -18,12 +18,12 @@ const Intro = () => (
           <div className="flex flex-row justify-between items-center w-full mt-20">
             <a href="#portfolio">
             <div className="flex text-center">
-                <span className="border-box border-2 sm:p-[25px] p-[10px] text-white font-[300] tracking-[3px] text-[13px] relative info-button" style={{ borderColor: '#A190FF'}}>VIEW PROJECTS</span>
+                <span className="border-box border-2 sm:p-[25px] p-[12px] text-white font-[300] tracking-[3px] text-[13px] relative info-button" style={{ borderColor: '#A190FF'}}>VIEW PROJECTS</span>
             </div>
             </a>
             <a href="#contact">
             <div className="flex sm:mr-3 ml-7 text-center">
-                <span className="border-box border-2 sm:p-[25px] p-[10px] text-white font-[300] tracking-[3px] text-[13px] relative info-button" style={{ borderColor: '#A190FF'}}>VIEW RESUME</span>
+                <span className="border-box border-2 sm:p-[25px] p-[12px] text-white font-[300] tracking-[3px] text-[13px] relative info-button" style={{ borderColor: '#A190FF'}}>VIEW RESUME</span>
             </div>
             </a>
           </div>

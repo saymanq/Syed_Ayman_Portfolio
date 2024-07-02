@@ -3,6 +3,8 @@ import Intro from "./Intro";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import Work from "./Work";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 export {
     NavBar,
@@ -10,4 +12,6 @@ export {
     About,
     Portfolio,
     Work,
+    Contact,
+    Footer,
 };

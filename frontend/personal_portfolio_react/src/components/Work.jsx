@@ -11,14 +11,14 @@ const Work = () => {
                 <div className="mx-5 mt-5 mb-7 text-left overflow-auto">
                     {/* Position 1 */}
                     <div className="flex justify-between items-center">
-                        <h1 className="text-three font-Montserrat sm:text-[29px] text-[24px]">Software Developer (AI/ML)</h1>
-                        <h1 className="text-white font-Montserrat sm:text-[16px] text-[24px]">March 2024 - Present</h1>
+                        <h1 className="text-three font-Montserrat sm:text-[29px] text-[20px]">Software Developer (AI/ML)</h1>
+                        <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden">March 2024 - Present</h1>
                     </div>
                     <div className="flex justify-between items-center">
-                        <h1 className="text-white font-Montserrat sm:text-[16px] text-[24px]">@ DataAnnotation.tech</h1>
-                        <h1 className="text-white font-Montserrat sm:text-[16px] text-[24px] italic">Remote, Canada</h1>
+                        <h1 className="text-white font-Montserrat sm:text-[19px] text-[15px]">@ DataAnnotation.tech</h1>
+                        <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden italic">Remote, Canada</h1>
                     </div>
-                    <div className="text-white font-Montserrat sm:text-[17px] text-[13px] ml-14 mt-4 mb-5">
+                    <div className="text-white font-Montserrat sm:text-[17px] text-[13px] sm:ml-14 ml-5 mt-4 mb-5">
                         <ul className="list-disc">
                             <li>Trained over 5 ML models (chatbots), achieving an accuracy rate of about 95% in code responses.</li>
                             <li>Tested chatbot code responses and developed custom code to identify and resolve an average of 10 bugs
@@ -30,14 +30,14 @@ const Work = () => {
                     
                     {/* Position 2 */}
                     <div className="flex justify-between items-center">
-                        <h1 className="text-three font-Montserrat sm:text-[29px] text-[24px]">Academic Tutor (CS)</h1>
-                        <h1 className="text-white font-Montserrat sm:text-[16px] text-[24px]">February 2024 – Present</h1>
+                        <h1 className="text-three font-Montserrat sm:text-[29px] text-[20px]">Academic Tutor (CS)</h1>
+                        <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden">February 2024 – Present</h1>
                     </div>
                     <div className="flex justify-between items-center">
-                        <h1 className="text-white font-Montserrat sm:text-[16px] text-[24px]">@ Ada’s Team</h1>
-                        <h1 className="text-white font-Montserrat sm:text-[16px] text-[24px] italic">Edmonton, Canada</h1>
+                        <h1 className="text-white font-Montserrat sm:text-[19px] text-[15px]">@ Ada’s Team</h1>
+                        <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden italic">Edmonton, Canada</h1>
                     </div>
-                    <div className="text-white font-Montserrat sm:text-[17px] text-[13px] ml-14 mt-4 mb-5">
+                    <div className="text-white font-Montserrat sm:text-[17px] text-[13px] sm:ml-14 ml-5 mt-4 mb-5">
                         <ul className="list-disc">
                             <li>Tutored 3 engineering students in a CS course, resulting in all students achieving a GPA of 3.4 or higher.</li>
                             <li>Developed customized learning plans, focusing on areas of improvement, resulting in a 25% average increase in assignment scores.</li>

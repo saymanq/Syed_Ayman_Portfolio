@@ -5,6 +5,7 @@ import Portfolio from "./Portfolio";
 import Work from "./Work";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Certifications from "./Certifications";
 
 export {
     NavBar,
@@ -14,4 +15,5 @@ export {
     Work,
     Contact,
     Footer,
+    Certifications,
 };

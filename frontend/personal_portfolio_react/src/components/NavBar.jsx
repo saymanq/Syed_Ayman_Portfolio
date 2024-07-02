@@ -6,7 +6,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   
   return (
-    <nav className="navbar w-full flex justify-between items-center pt-[50px] sm:pl-[30px] pl-[10px]">
+    <nav id="home" className="navbar w-full flex justify-between items-center pt-[50px] sm:pl-[30px] pl-[10px]">
       <img src={logo} alt="SAQ" className="sm:w-[160px] w-[120px]"/>
       <ul className="list-none sm:flex hidden justify-start items-center flex-1 ml-20">
         {navLinks.map((nav, index) => (

@@ -20,11 +20,11 @@ const Work = () => {
                     </div>
                     <div className="text-white font-Montserrat sm:text-[17px] text-[13px] sm:ml-14 ml-5 mt-4 mb-5">
                         <ul className="list-disc">
-                            <li>Trained over 5 ML models (chatbots), achieving an accuracy rate of about 95% in code responses.</li>
-                            <li>Tested chatbot code responses and developed custom code to identify and resolve an average of 10 bugs
-                            per model response, and submitting corrected code and feedback for implementation.</li>
-                            <li>Improved model performance by atleast 25%, enabling chatbots to provide accurate code responses to users
-                            and enhancing overall user experience.</li>
+                            <li><span className="font-sans font-semibold">Trained over 5 ML models</span> (chatbots), achieving an accuracy rate of about <span className="font-sans font-semibold">95%</span> in code responses.</li>
+                            <li><span className="font-sans font-semibold">Developed custom code</span> and <span className="font-sans font-semibold">tested chatbot code responses</span> to identify and resolve an average of <span className="font-sans font-semibold">10 bugs
+                            per model response</span>, and <span className="font-sans font-semibold">submitted corrected code</span> and feedback for implementation.</li>
+                            <li><span className="font-sans font-semibold">Improved model performance</span> by atleast 25%, enabling chatbots to provide accurate code responses to users
+                            and <span className="font-sans font-semibold">enhanced overall user experience</span>.</li>
                         </ul>
                     </div>
                     
@@ -39,9 +39,9 @@ const Work = () => {
                     </div>
                     <div className="text-white font-Montserrat sm:text-[17px] text-[13px] sm:ml-14 ml-5 mt-4 mb-5">
                         <ul className="list-disc">
-                            <li>Tutored 3 engineering students in a CS course, resulting in all students achieving a GPA of 3.4 or higher.</li>
-                            <li>Developed customized learning plans, focusing on areas of improvement, resulting in a 25% average increase in assignment scores.</li>
-                            <li>Delivered 50+ hours of individualized support, empowering students to succeed with a 100% pass rate.</li>
+                            <li><span className="font-sans font-semibold">Tutored 3 engineering students</span> in a CS course, resulting in all students achieving a <span className="font-sans font-semibold">GPA of 3.4</span> or higher.</li>
+                            <li><span className="font-sans font-semibold">Developed customized learning plans</span>, focusing on areas of improvement, resulting in a <span className="font-sans font-semibold">25% average increase</span> in assignment scores.</li>
+                            <li><span className="font-sans font-semibold">Delivered 50+ hours</span> of individualized support, empowering students to succeed with a <span className="font-sans font-semibold">100% pass rate.</span></li>
                         </ul>
                     </div>
                 </div>

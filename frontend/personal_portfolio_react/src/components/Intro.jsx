@@ -1,7 +1,8 @@
 import { pfp } from '../assets';
 
-const Intro = () => (
-    <section id="home" className={`flex sm:flex-row flex-col sm:py-16 py-6`}>
+const Intro = () => {  
+  return (
+    <section className={`flex sm:flex-row flex-col sm:py-16 py-6`}>
       <div className="flex sm:flex-row flex-col justify-between items-center w-full sm:pt-10 pt-3 sm:pl-7">
         <div className="sm:hidden flex w-[250px] mb-4 mt-9">
           <img src={pfp} alt="ProfilePic"  className="w-[400px] rounded-full border-2" style={{ borderColor: '#A190FF'}}/>
@@ -21,7 +22,7 @@ const Intro = () => (
                 <span className="border-box border-2 sm:p-[25px] p-[12px] text-white font-[300] tracking-[3px] text-[13px] relative info-button" style={{ borderColor: '#A190FF'}}>VIEW PROJECTS</span>
             </div>
             </a>
-            <a href="#contact">
+            <a href='https://drive.google.com/file/d/14Zn6eK_8Rh-ObqMPYzVL1m88U0P94kr7/view?usp=sharing' target='_blank' rel="noopener noreferrer">
             <div className="flex sm:mr-3 ml-7 text-center">
                 <span className="border-box border-2 sm:p-[25px] p-[12px] text-white font-[300] tracking-[3px] text-[13px] relative info-button" style={{ borderColor: '#A190FF'}}>VIEW RESUME</span>
             </div>
@@ -33,6 +34,6 @@ const Intro = () => (
         </div>
       </div>
     </section>
-  )
+  )}
 
 export default Intro

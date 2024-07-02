@@ -1,4 +1,4 @@
-import { NavBar, Intro, About, Portfolio, Work, Contact, Footer } from './components';
+import { NavBar, Intro, About, Portfolio, Work, Contact, Footer, Certifications } from './components';
 
 
 const App = () => (
@@ -41,6 +41,13 @@ const App = () => (
       <div className="flex justify-center items-center sm:px-16 px-6">
           <div className="w-full">
             <Portfolio />
+          </div>
+      </div>
+
+      {/* Certifications */}
+      <div className="flex justify-center items-center sm:px-16 px-6">
+          <div className="w-full">
+            <Certifications />
           </div>
       </div>
 

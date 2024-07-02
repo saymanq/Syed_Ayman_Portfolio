@@ -2,14 +2,15 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { project1, project2, project3, project4 } from "../assets";
 
-const baseUrl = 'https://syed-ayman-portfolio-flask-app.onrender.com'
+const baseUrl1 = 'https://syed-ayman-portfolio-flask-app.onrender.com';
+const baseUrl2 = 'https://yappy-etty-saymanq-9c2c6886.koyeb.app/';
 
 const Portfolio = () => {
     const [dataList, setDataList] = useState([]);
     
     
     const fetchdata = async () => {
-        const data = await axios.get(`${baseUrl}/api/getproject`);
+        const data = await axios.get(`${baseUrl2}/api/getprojects`);
         const cleanData = data.data;
         console.log(cleanData);
         setDataList(cleanData);

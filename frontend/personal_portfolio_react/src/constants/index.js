@@ -8,16 +8,16 @@ export const navLinks = [
       title: "ABOUT",
     },
     {
-      id: "work",
-      title: "WORK",
-    },
-    {
         id: "portfolio",
         title: "PORTFOLIO",
     },
     {
       id: "certifications",
       title: "CERTIFICATIONS",
+    },
+    {
+      id: "work",
+      title: "WORK",
     },
     {
       id: "contact",

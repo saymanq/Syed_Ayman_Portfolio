@@ -5,7 +5,7 @@ const App = () => (
     <div className="bg-secondary"> 
        
       {/* First Page  */}
-      <div className="w-full h-screen bg-cover  overflow-hidden relative z-10">
+      <div className="w-full h-lvh bg-cover  overflow-hidden relative z-10">
         <div className="absolute inset-0 bg-[url('./assets/home_bg_img.png')] bg-cover brightness-[0.32] -z-10 w-[1400px] bg-fixed" />
         
         {/* NAVBAR */}
@@ -30,14 +30,7 @@ const App = () => (
           </div>
       </div>
 
-      {/* Projects */}
-      <div className="flex justify-center items-center sm:px-16 px-6">
-          <div className="w-full">
-            <Work />
-          </div>
-      </div>
-
-      {/* Work Experience */}
+      {/* Portfolio */}
       <div className="flex justify-center items-center sm:px-16">
           <div className="w-full">
             <Portfolio />
@@ -48,6 +41,13 @@ const App = () => (
       <div className="flex justify-center items-center sm:px-16 px-6">
           <div className="w-full">
             <Certifications />
+          </div>
+      </div>
+
+      {/* Work */}
+      <div className="flex justify-center items-center sm:px-16 px-6">
+          <div className="w-full">
+            <Work />
           </div>
       </div>
 

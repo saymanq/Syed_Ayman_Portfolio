@@ -62,7 +62,7 @@ const Contact = () => {
   
     return (
     <section id="contact" className="flex justify-center items-center flex-col py-9">
-        <div className="mt-10">
+        <div className="mt-10 flex justify-center items-center text-center">
             <h1 className="text-white font-Montserrat sm:text-[50px] text-[30px] font-semibold">GET IN TOUCH WITH ME</h1>
         </div>
         

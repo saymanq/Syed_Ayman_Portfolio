@@ -2,7 +2,7 @@ import { python, javascript, cpp, mysql, html, css, vite, flask, django, tailwin
 
 const About = () => (
     <section id="about" className="flex justify-center items-center flex-col py-9">
-        <div className="mt-10">
+        <div className="mt-10 flex justify-center items-center text-center">
             <h1 className="text-white font-Montserrat sm:text-[50px] text-[30px] font-semibold">ABOUT</h1>
         </div>
         

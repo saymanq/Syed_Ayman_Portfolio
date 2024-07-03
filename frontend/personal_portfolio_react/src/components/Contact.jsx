@@ -67,7 +67,7 @@ const Contact = () => {
         </div>
         
             <div className="flex w-full p-1 mt-10">
-                <div className="mx-5 mt-5 mb-7 text-left w-full overflow-auto">
+                <div className="mx-5 mt-5 mb-7 text-left w-full overflow-hidden">
                     <div className="flex sm:justify-evenly justify-center sm:items-start items-center sm:flex-row flex-col">
                         <div className='sm:w-[550px] border-box border-2 border-three rounded-[15px] sm:p-11 p-6'>
                             <div className="flex justify-center items-center flex-col">
@@ -91,8 +91,8 @@ const Contact = () => {
                                 <input type="text" name="subject" placeholder="Subject" id="subject" value={subject} onChange={handleSubjectChange} className='w-full mb-3 border-box border-2 border-three h-12 bg-charcoal p-3' required></input>
                                 <textarea name="message" placeholder="Message" id="message" value={message} onChange={handleMessageChange} rows='8' cols='57' className='w-full border-box border-2 border-three bg-charcoal p-3 mb-1' required></textarea>
                                 <div className='flex justify-between items-center sm:flex-row flex-col mt-3 w-full'>    
-                                    <ReCAPTCHA sitekey="6LfKEAYqAAAAAIEanf_GrhcjTnucYZhe2E8sFmvP" onChange={handleVerify} />
-                                    <div className='border-box border-2 border-three p-2 hover:bg-three mr-3 sm:mt-0 mt-3 transition duration-0 hover:duration-300 ease-in-out mb-3'>
+                                    <ReCAPTCHA sitekey="6LfKEAYqAAAAAIEanf_GrhcjTnucYZhe2E8sFmvP" onChange={handleVerify}/>
+                                    <div className='border-box border-2 border-three p-2 hover:bg-three mr-1 sm:mt-0 mt-3 transition duration-0 hover:duration-300 ease-in-out mb-3'>
                                         <button type="submit" value="SEND" disabled={!isVerified}>Send Message</button>
                                     </div>
                                 </div>

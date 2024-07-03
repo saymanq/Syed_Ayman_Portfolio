@@ -38,7 +38,7 @@ const App = () => (
       </div>
 
       {/* Work Experience */}
-      <div className="flex justify-center items-center sm:px-16 px-6">
+      <div className="flex justify-center items-center sm:px-16">
           <div className="w-full">
             <Portfolio />
           </div>
@@ -52,7 +52,7 @@ const App = () => (
       </div>
 
       {/* Contact */}
-      <div className="flex justify-center items-center sm:px-16 px-6">
+      <div className="flex justify-center items-center sm:px-16 px-5">
           <div className="w-full">
             <Contact />
           </div>

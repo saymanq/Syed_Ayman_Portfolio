@@ -13,10 +13,13 @@ const Intro = () => {
             <div className="sm:hidden block text-[42px]">Hi,</div>
             <div className="sm:block hidden text-[48px]">I'm <span className="text-gradient1 text-[55px] backdrop-blur">SYED AYMAN QUADRI,</span></div> 
             <div className="sm:hidden block text-[42px]">I'm <span className="text-gradient1 text-[50px]">AYMAN,</span></div> 
-            <div className="sm:block hidden text-[48px]">software engineer.</div>
-            <div className="sm:hidden block text-[42px]">software engineer.</div>
+            <div className="sm:block hidden text-[48px]">software engineer.</div>  
+            <div className="flex items-center">
+              <div className="sm:hidden text-[42px]">software</div>
+              <div className="sm:hidden text-[42px] ml-2">engineer.</div>
+            </div>
           </h1>
-          <div className="flex flex-row justify-between items-center w-full mt-20">
+          <div className="flex flex-row justify-between items-center w-full sm:mt-20 mt-7">
             <a href="#portfolio">
             <div className="flex text-center">
                 <span className="border-box border-2 sm:p-[25px] p-[12px] text-white font-[300] tracking-[3px] text-[13px] relative info-button" style={{ borderColor: '#A190FF'}}>VIEW PROJECTS</span>

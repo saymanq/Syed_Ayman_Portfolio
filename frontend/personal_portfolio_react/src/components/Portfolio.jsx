@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { project1, project2, project3, project4, project5 } from "../assets";
+import { project1, project2, project3, project4, project5, project6 } from "../assets";
 
 const baseUrl1 = 'https://syed-ayman-portfolio-flask-app.onrender.com';
 const baseUrl2 = 'https://yappy-etty-saymanq-9c2c6886.koyeb.app/';
@@ -10,7 +10,7 @@ const Portfolio = () => {
     
     
     const fetchdata = async () => {
-        const data = await axios.get(`${baseUrl2}/api/getprojects`);
+        const data = await axios.get(`${baseUrl2}/api/getproject`);
         const cleanData = data.data;
         console.log(cleanData);
         setDataList(cleanData);
@@ -27,6 +27,7 @@ const Portfolio = () => {
         project3: project3,
         project4: project4,
         project5: project5,
+        project6: project6,
       };
 
     // ${((data.project_id) > (window.innerWidth >= 640 ? 3 : 1)) ? 'mt-14 mb-6' : ''}

@@ -28,6 +28,7 @@ import project2 from './project-imgs/project2.png';
 import project3 from './project-imgs/project3.png';
 import project4 from './project-imgs/project4.png';
 import project5 from './project-imgs/project5.png';
+import project6 from './project-imgs/project6.png';
 import linkedin from './linkedin.svg';
 import gmail from './gmail.svg';
 import jpmc from './jpmc.jpeg';
@@ -66,6 +67,7 @@ export {
     project3,
     project4,
     project5,
+    project6,
     linkedin,
     gmail,
     jpmc,

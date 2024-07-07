@@ -11,12 +11,29 @@ const Work = () => {
                 <div className="mx-5 mt-5 mb-7 text-left overflow-auto">
                     {/* Position 1 */}
                     <div className="flex justify-between items-center">
+                        <h1 className="text-three font-Montserrat sm:text-[29px] text-[20px]">Machine Learning Engineer Intern</h1>
+                        <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden">June 2024 - Present</h1>
+                    </div>
+                    <div className="flex justify-between items-center">
+                        <h1 className="text-white font-Montserrat sm:text-[19px] text-[15px]">@ Mentorness</h1>
+                        <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden italic">Remote</h1>
+                    </div>
+                    <div className="text-white font-Montserrat sm:text-[17px] text-[13px] sm:ml-14 ml-5 mt-4 mb-5">
+                        <ul className="list-disc">
+                            <li><span className="font-sans font-semibold">Built a predictive model</span> for data professional salaries using regression techniques, achieving <span className="font-sans font-semibold">high accuracy</span>.</li>
+                            <li><span className="font-sans font-semibold">Analyzed</span> data, <span className="font-sans font-semibold">engineered</span> features, and <span className="font-sans font-semibold">trained/evaluated</span> multiple models to identify the best performer.</li>
+                            <li><span className="font-sans font-semibold">Optimized model performance</span>, enabling <span className="font-sans font-semibold">accurate predictions</span> and providing actionable recommendations for the field.</li>
+                        </ul>
+                    </div>
+
+                    {/* Position 2 */}
+                    <div className="flex justify-between items-center">
                         <h1 className="text-three font-Montserrat sm:text-[29px] text-[20px]">Software Developer (AI/ML)</h1>
                         <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden">March 2024 - Present</h1>
                     </div>
                     <div className="flex justify-between items-center">
                         <h1 className="text-white font-Montserrat sm:text-[19px] text-[15px]">@ DataAnnotation.tech</h1>
-                        <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden italic">Remote, Canada</h1>
+                        <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden italic">Remote</h1>
                     </div>
                     <div className="text-white font-Montserrat sm:text-[17px] text-[13px] sm:ml-14 ml-5 mt-4 mb-5">
                         <ul className="list-disc">
@@ -28,7 +45,7 @@ const Work = () => {
                         </ul>
                     </div>
                     
-                    {/* Position 2 */}
+                    {/* Position 3 */}
                     <div className="flex justify-between items-center">
                         <h1 className="text-three font-Montserrat sm:text-[29px] text-[20px]">Academic Tutor (CS)</h1>
                         <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden">February 2024 – Present</h1>

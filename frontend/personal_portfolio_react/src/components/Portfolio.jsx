@@ -10,7 +10,7 @@ const Portfolio = () => {
     
     
     const fetchdata = async () => {
-        const data = await axios.get(`${baseUrl2}/api/getproject`);
+        const data = await axios.get(`${baseUrl2}/api/getprojects`);
         const cleanData = data.data;
         console.log(cleanData);
         setDataList(cleanData);

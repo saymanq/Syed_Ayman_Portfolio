@@ -25,7 +25,7 @@ const Intro = () => {
                 <span className="border-box border-2 sm:p-[25px] p-[12px] text-white font-[300] tracking-[3px] text-[13px] relative info-button" style={{ borderColor: '#A190FF'}}>VIEW PROJECTS</span>
             </div>
             </a>
-            <a href='https://drive.google.com/file/d/14Zn6eK_8Rh-ObqMPYzVL1m88U0P94kr7/view?usp=sharing' target='_blank' rel="noopener noreferrer">
+            <a href='https://drive.google.com/file/d/1-YkXsBcDtohYa2xKauBWKmG0x6-0qrwb/view?usp=sharing' target='_blank' rel="noopener noreferrer">
             <div className="flex sm:mr-3 ml-7 text-center">
                 <span className="border-box border-2 sm:p-[25px] p-[12px] text-white font-[300] tracking-[3px] text-[13px] relative info-button" style={{ borderColor: '#A190FF'}}>VIEW RESUME</span>
             </div>

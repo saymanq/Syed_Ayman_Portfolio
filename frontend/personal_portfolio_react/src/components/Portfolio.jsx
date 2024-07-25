@@ -52,7 +52,7 @@ const Portfolio = () => {
                     return (
                         <a key={data.project_id} href={data.link_url} target='_blank'>
                             <div className={`border-box border-2 border-two rounded-lg sm:w-[320px] sm:h-[423px] h-[440px] w-[300px] overflow-auto hover:shadow-two shadow-xl sm:mx-7 transition duration-0 hover:duration-300 ease-in-out mt-14 mb-6 `}>
-                                <img src={images[img_mapping]} className="rounded-lg w-full h-[180px] "/>
+                                <img src={images[img_mapping]} alt="Syed Ayman Quadri" className="rounded-lg w-full h-[180px] "/>
                                 <div className="text-two mt-2 mx-2 text-[22px] text-center font-Montserrat tracking-tighter underline underline-offset-[6px]">{data.project_name}</div>
                                 <div className="text-white mt-2 mx-2 text-[17px] text-center font-sans tracking-tight">{data.project_description}</div>
                             </div>

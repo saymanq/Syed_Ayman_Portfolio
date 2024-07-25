@@ -5,7 +5,7 @@ const Intro = () => {
     <section className={`flex sm:flex-row flex-col sm:py-16 py-6`}>
       <div className="flex sm:flex-row flex-col justify-between items-center w-full sm:pt-10 pt-3 sm:pl-7">
         <div className="sm:hidden flex w-[250px] mb-4 mt-9">
-          <img src={pfp} alt="ProfilePic"  className="w-[400px] rounded-full border-2" style={{ borderColor: '#A190FF'}}/>
+          <img src={pfp} alt="Syed Ayman Quadri"  className="w-[400px] rounded-full border-2" style={{ borderColor: '#A190FF'}}/>
         </div>
         <div className="flex-col">
           <h1 className="flex flex-col flex-1 font-Montserrat sm:text-[55px] text-[50px] text-white tracking-tighter">
@@ -33,7 +33,7 @@ const Intro = () => {
           </div>
         </div>
         <div className="mb-20 sm:flex hidden">
-          <img src={pfp} alt="ProfilePic"  className="w-[400px] rounded-full border-2" style={{ borderColor: '#A190FF'}}/>
+          <img src={pfp} alt="Syed Ayman Quadri"  className="w-[400px] rounded-full border-2" style={{ borderColor: '#A190FF'}}/>
         </div>
       </div>
     </section>

@@ -76,9 +76,9 @@ const Contact = () => {
                                     <p className='text-white font-Montserrat sm:text-[15px] text-[13px]'>I value open communication and welcome any inquiries, feedback, or collaboration opportunities. Please don't hesitate to get in touch with me by filling out the contact form.</p>
                                 </div>   
                                 <div className='flex justify-evenly items-center flex-row w-full mt-3 sm:mr-2 mr-3'>
-                                    <a href="https://www.linkedin.com/in/aymanquadri/" target='_blank'><img src={linkedin} className='sm:w-[90px] w-[55px]'/></a>
-                                    <a href="mailto:syedaym1@ualberta.ca"><img src={gmail} className='sm:w-[80px] w-[45px]'/></a>
-                                    <a href="https://github.com/saymanq" target="_blank"><img src={github} className='sm:w-[60px] w-[39px] invert ml-1 mr-2'/></a>
+                                    <a href="https://www.linkedin.com/in/aymanquadri/" target='_blank'><img src={linkedin} alt="Syed Ayman Quadri" className='sm:w-[90px] w-[55px]'/></a>
+                                    <a href="mailto:syedaym1@ualberta.ca"><img src={gmail} alt="Syed Ayman Quadri" className='sm:w-[80px] w-[45px]'/></a>
+                                    <a href="https://github.com/saymanq" target="_blank"><img src={github} alt="Syed Ayman Quadri" className='sm:w-[60px] w-[39px] invert ml-1 mr-2'/></a>
                                 </div>
                             </div>    
                         </div>

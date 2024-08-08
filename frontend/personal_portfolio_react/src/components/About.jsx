@@ -10,7 +10,7 @@ const About = () => (
                 <div className="mx-5 mt-5 mb-7 text-left overflow-auto">
                     <h1 className="text-five font-Montserrat sm:text-[29px] text-[24px]">WHO AM I?</h1>
                     <p className="text-white font-Montserrat sm:text-[17px] text-[13px] mt-4 mb-5">
-                        I'm a very ambitious <span className="text-five sm:text-[19px] text-[15px]">Machine Learning Engineer</span> driven by a curiosity to explore 
+                        I'm a very ambitious <span className="text-five sm:text-[19px] text-[15px]">Artificial Intelligence Engineer</span> driven by a curiosity to explore 
                         the intersection of technology and creativity. With an extraordinarily strong 
                         foundation in programming fundamentals, I am always seeking opportunities to learn 
                         and grow in the field. Through my projects and experiences, I aim to showcase my  

@@ -11,18 +11,18 @@ const Work = () => {
                 <div className="mx-5 mt-5 mb-7 text-left overflow-auto">
                     {/* Position 1 */}
                     <div className="flex justify-between items-center">
-                        <h1 className="text-three font-Montserrat sm:text-[29px] text-[20px]">Machine Learning Engineer Intern</h1>
-                        <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden">June 2024 - Present</h1>
+                        <h1 className="text-three font-Montserrat sm:text-[29px] text-[20px]">Software Engineering Fellow</h1>
+                        <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden">July 2024 - Present</h1>
                     </div>
                     <div className="flex justify-between items-center">
-                        <h1 className="text-white font-Montserrat sm:text-[19px] text-[15px]">@ Mentorness</h1>
+                        <h1 className="text-white font-Montserrat sm:text-[19px] text-[15px]">@ Headstarter.ai</h1>
                         <h1 className="text-white font-Montserrat sm:text-[16px] sm:block hidden italic">Remote</h1>
                     </div>
                     <div className="text-white font-Montserrat sm:text-[17px] text-[13px] sm:ml-14 ml-5 mt-4 mb-5">
                         <ul className="list-disc">
-                            <li><span className="font-sans font-semibold">Built a predictive model</span> for data professional salaries using regression techniques, achieving <span className="font-sans font-semibold">high accuracy</span>.</li>
-                            <li><span className="font-sans font-semibold">Analyzed</span> data, <span className="font-sans font-semibold">engineered</span> features, and <span className="font-sans font-semibold">trained/evaluated</span> multiple models to identify the best performer.</li>
-                            <li><span className="font-sans font-semibold">Optimized model performance</span>, enabling <span className="font-sans font-semibold">accurate predictions</span> and providing actionable recommendations for the field.</li>
+                            <li><span className="font-sans font-semibold">Built 5+ AI apps and APIs</span> using NextJS, OpenAI, Pinecone, StripeAPI with <span className="font-sans font-semibold">98%</span> accuracy as seen by <span className="font-sans font-semibold">1000</span> users</li>
+                            <li><span className="font-sans font-semibold">Developed projects</span> form design to deployment leading <span className="font-sans font-semibold">4+</span> engineering fellows using MVC design patterns</li>
+                            <li>Coached by <span className="font-sans font-semibold">Amazon</span>, <span className="font-sans font-semibold">Bloomberg</span> and <span className="font-sans font-semibold">Capital One</span> engineers on Agile, CI/CD, Git and microservice patterns</li>
                         </ul>
                     </div>
 
@@ -37,11 +37,11 @@ const Work = () => {
                     </div>
                     <div className="text-white font-Montserrat sm:text-[17px] text-[13px] sm:ml-14 ml-5 mt-4 mb-5">
                         <ul className="list-disc">
-                            <li><span className="font-sans font-semibold">Trained over 5 ML models</span> (chatbots), achieving an accuracy rate of about <span className="font-sans font-semibold">95%</span> in code responses.</li>
+                            <li><span className="font-sans font-semibold">Trained over 5 ML models</span> (chatbots), achieving an accuracy rate of about <span className="font-sans font-semibold">95%</span> in code responses</li>
                             <li><span className="font-sans font-semibold">Developed custom code</span> and <span className="font-sans font-semibold">tested chatbot code responses</span> to identify and resolve an average of <span className="font-sans font-semibold">10 bugs
-                            per model response</span>, and <span className="font-sans font-semibold">submitted corrected code</span> and feedback for implementation.</li>
+                            per model response</span>, and <span className="font-sans font-semibold">submitted corrected code</span> and feedback for implementation</li>
                             <li><span className="font-sans font-semibold">Improved model performance</span> by atleast 25%, enabling chatbots to provide accurate code responses to users
-                            and <span className="font-sans font-semibold">enhanced overall user experience</span>.</li>
+                            and <span className="font-sans font-semibold">enhanced overall user experience</span></li>
                         </ul>
                     </div>
                     
@@ -56,9 +56,9 @@ const Work = () => {
                     </div>
                     <div className="text-white font-Montserrat sm:text-[17px] text-[13px] sm:ml-14 ml-5 mt-4 mb-5">
                         <ul className="list-disc">
-                            <li><span className="font-sans font-semibold">Tutored 3 engineering students</span> in a CS course, resulting in all students achieving a <span className="font-sans font-semibold">GPA of 3.4</span> or higher.</li>
-                            <li><span className="font-sans font-semibold">Developed customized learning plans</span>, focusing on areas of improvement, resulting in a <span className="font-sans font-semibold">25% average increase</span> in assignment scores.</li>
-                            <li><span className="font-sans font-semibold">Delivered 50+ hours</span> of individualized support, empowering students to succeed with a <span className="font-sans font-semibold">100% pass rate.</span></li>
+                            <li><span className="font-sans font-semibold">Tutored 3 engineering students</span> in a CS course, resulting in all students achieving a <span className="font-sans font-semibold">GPA of 3.5</span> or higher</li>
+                            <li><span className="font-sans font-semibold">Developed customized learning plans</span>, focusing on areas of improvement, resulting in a <span className="font-sans font-semibold">25% average increase</span> in assignment scores</li>
+                            <li><span className="font-sans font-semibold">Delivered 50+ hours</span> of individualized support, empowering students to succeed with a <span className="font-sans font-semibold">100% pass rate</span></li>
                         </ul>
                     </div>
                 </div>

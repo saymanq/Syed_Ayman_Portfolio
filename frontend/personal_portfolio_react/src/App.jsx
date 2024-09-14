@@ -30,6 +30,13 @@ const App = () => (
           </div>
       </div>
 
+      {/* Work */}
+      <div className="flex justify-center items-center sm:px-16 px-6">
+          <div className="w-full">
+            <Work />
+          </div>
+      </div>
+
       {/* Portfolio */}
       <div className="flex justify-center items-center sm:px-16">
           <div className="w-full">
@@ -41,13 +48,6 @@ const App = () => (
       <div className="flex justify-center items-center sm:px-16 px-6">
           <div className="w-full">
             <Certifications />
-          </div>
-      </div>
-
-      {/* Work */}
-      <div className="flex justify-center items-center sm:px-16 px-6">
-          <div className="w-full">
-            <Work />
           </div>
       </div>
 

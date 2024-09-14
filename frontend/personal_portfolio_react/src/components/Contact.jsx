@@ -1,4 +1,5 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useCallback } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from '@emailjs/browser';
 import { linkedin, gmail, github } from '../assets';
@@ -10,6 +11,7 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const [isVerified, setIsVerified] = useState(false);
     const form = useRef();
+    const recaptcha = useRef(null);
 
     const handleNameChange = (e) => {
         setName(e.target.value);
@@ -28,18 +30,21 @@ const Contact = () => {
     }
 
     const handleVerify = () => {
-        console.log('It is called.')
-        setIsVerified(true);
+        if(!recaptcha.current.getValue()){
+            toast.error('Please Submit Captcha')
+          } else {
+            setIsVerified(true);
+          }
       };
 
-
-    const testSendEmail = () => {
-        alert('Email sent');
-    }
+    const handleExpired = useCallback(() => {
+        setIsVerified(false);
+        toast.error('reCAPTCHA has expired. Please verify again.');
+    }, []);
 
     const sendEmail = (e) => {
         e.preventDefault();
-        if (isVerified) {
+        if (isVerified && recaptcha.current.getValue()) {
             emailjs
             .sendForm('service_zx268kd', 'template_dnho1tn', form.current, {
                 publicKey: 'g8DolYJZE2wojTjGC',
@@ -55,14 +60,15 @@ const Contact = () => {
                 },
             );
         } else {
-            alert('Please verify reCAPTCHA');
-        };
+            toast.error('Please verify reCAPTCHA');
+        }
       };
 
   
     return (
     <section id="contact" className="flex justify-center items-center flex-col py-9">
         <div className="mt-10 flex justify-center items-center text-center">
+            <Toaster position="top-center" reverseOrder={false}/>
             <h1 className="text-white font-Montserrat sm:text-[50px] text-[30px] font-semibold">GET IN TOUCH WITH ME</h1>
         </div>
         
@@ -91,7 +97,7 @@ const Contact = () => {
                                 <input type="text" name="subject" placeholder="Subject" id="subject" value={subject} onChange={handleSubjectChange} className='w-full mb-3 border-box border-2 border-three h-12 bg-charcoal p-3' required></input>
                                 <textarea name="message" placeholder="Message" id="message" value={message} onChange={handleMessageChange} rows='8' cols='57' className='w-full border-box border-2 border-three bg-charcoal p-3 mb-1' required></textarea>
                                 <div className='flex justify-between items-center sm:flex-row flex-col mt-3 w-full'>    
-                                    <ReCAPTCHA sitekey="6LfKEAYqAAAAAIEanf_GrhcjTnucYZhe2E8sFmvP" onChange={handleVerify}/>
+                                    <ReCAPTCHA sitekey="6LfKEAYqAAAAAIEanf_GrhcjTnucYZhe2E8sFmvP" onChange={handleVerify} onExpired={handleExpired} ref={recaptcha}/>
                                     <div className='border-box border-2 border-three p-2 hover:bg-three mr-1 sm:mt-0 mt-3 transition duration-0 hover:duration-300 ease-in-out mb-3'>
                                         <button type="submit" value="SEND" disabled={!isVerified}>Send Message</button>
                                     </div>

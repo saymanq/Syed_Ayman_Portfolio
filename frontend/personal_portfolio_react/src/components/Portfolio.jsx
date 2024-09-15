@@ -51,10 +51,16 @@ const Portfolio = () => {
                     const img_mapping = data.image_url
                     return (
                         <a key={data.project_id} href={data.link_url} target='_blank'>
-                            <div className={`border-box border-2 border-two rounded-lg sm:w-[320px] sm:h-[423px] h-[440px] w-[300px] overflow-auto hover:shadow-two shadow-xl sm:mx-7 transition duration-0 hover:duration-300 ease-in-out mt-14 mb-6 `}>
-                                <img src={images[img_mapping]} alt="Syed Ayman Quadri" className="rounded-lg w-full h-[180px] "/>
-                                <div className="text-two mt-2 mx-2 text-[22px] text-center font-Montserrat tracking-tighter underline underline-offset-[6px]">{data.project_name}</div>
-                                <div className="text-white mt-2 mx-2 text-[17px] text-center font-sans tracking-tight">{data.project_description}</div>
+                            <div className={`border-box border-2 bg-zinc-900 border-five rounded-lg sm:w-[330px] sm:h-[473px] h-[510px] w-[300px] overflow-auto hover:shadow-five shadow-xl sm:mx-7 transition duration-0 hover:duration-300 ease-in-out mt-14 mb-6 flex flex-col justify-between`}>
+                                <div>
+                                    <img src={images[img_mapping]} alt="Syed Ayman Quadri" className="rounded-lg w-full h-[180px] "/>
+                                    <div className="text-three mt-2 mx-2 text-[22px] text-center font-Montserrat tracking-tighter underline underline-offset-[6px]">{data.project_name}</div>
+                                    <div className="text-white mt-2 mx-2 text-[17px] text-center font-sans tracking-tight">{data.project_description}</div>
+                                </div>
+                                <div className="text-three mb-2 mx-3 text-[17px] text-left font-sans tracking-tight flex flex-row">
+                                    <div className="text-three mr-2">Tools:</div>
+                                    <div>{data.tools}</div>
+                                </div>
                             </div>
                         </a>
                     )
